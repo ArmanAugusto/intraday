@@ -3,7 +3,7 @@ import sqlite3
 import requests
 
 def fetch_intraday_data(ticker, interval='1min'):
-    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={ticker}&interval={interval}=ZS7XFDE235LEON2U&outputsize=full'
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={ticker}&interval={interval}={api}&outputsize=full'
     response = requests.get(url)
     data = response.json()
     

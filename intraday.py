@@ -20,11 +20,3 @@ def fetch_intraday_data(ticker, interval='1min'):
     df['ticker'] = ticker
 
     return df
-
-
-def main():
-    fetch_intraday_data('APL')
-
-
-if __name__=="__main__":
-    main()
